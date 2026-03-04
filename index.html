@@ -3,47 +3,355 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KaniTech Portfolio</title>
+  <title>KaniTech Portfolio | AIとCMOSアナログ回路で強いエンジニアになるブログ</title>
+  <meta
+    name="description"
+    content="AI、Python、CMOSアナログ回路、制御、信号処理を横断して学ぶ技術ブログ。学習記録、回路解析、実装メモ、研究ログを公開。"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <h1>KaniTech-kun</h1>
-    <p>Python / AI / Engineering Portfolio</p>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">KaniTech Blog</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#posts">Posts</a>
+        <a href="#projects">Projects</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">AI × CMOS Analog × Python</p>
+        <h1>AIとCMOSアナログ回路で<br>強いエンジニアになるブログ</h1>
+        <p class="hero-description">
+          Python、機械学習、CMOSアナログ回路、制御、信号処理をつなぎながら、
+          学んだ内容を技術記事・実装メモ・研究ログとして整理する個人ブログです。
+          理論だけで終わらず、式、コード、回路、解析結果まで残します。
+        </p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#posts">記事を見る</a>
+          <a class="button secondary" href="https://github.com/tututu12321" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+        </div>
+        <ul class="hero-points">
+          <li>AIとアナログ回路を別々にせず、つながりで学ぶ</li>
+          <li>数式・Python・回路図・設計メモを一体で整理</li>
+          <li>学生から研究・開発初期まで役立つ記録を公開</li>
+        </ul>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-card">
+          <p class="panel-title">Main Themes</p>
+          <ul class="theme-list">
+            <li>CMOSアナログ回路</li>
+            <li>Pythonによる解析と自動化</li>
+            <li>AI・機械学習の基礎と応用</li>
+            <li>制御・信号処理・数理モデル</li>
+          </ul>
+        </div>
+        <div class="panel-card">
+          <p class="panel-title">Target Style</p>
+          <p class="panel-text">
+            学習記録で終わらず、後で読み返して再利用できる形で蓄積する。
+            コード断片、回路の考え方、比較、実験ログを丁寧に残す。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <section>
-      <h2>About</h2>
-      <p>
-        Python、機械学習、制御、回路、技術学習の記録をまとめるポートフォリオです。
-      </p>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">About</p>
+          <h2>このブログについて</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="card large">
+            <h3>目指している姿</h3>
+            <p>
+              AIの知識だけでも、回路の知識だけでもなく、
+              両方を横断して理解し、実装まで進められるエンジニアを目指しています。
+              このブログでは、学習の流れ、考えたこと、試したこと、うまくいかなかった点まで含めて記録します。
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>扱う分野</h3>
+            <ul class="bullet-list">
+              <li>CMOSアナログ回路</li>
+              <li>オペアンプ、差動対、電流ミラー</li>
+              <li>Pythonによる回路解析</li>
+              <li>機械学習、深層学習</li>
+              <li>現代制御、信号処理、数理</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>記事の書き方</h3>
+            <ul class="bullet-list">
+              <li>用語だけで流さない</li>
+              <li>式と意味を対応させる</li>
+              <li>コードや回路に落とす</li>
+              <li>後で再利用しやすい構成にする</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Projects</h2>
+    <section id="focus" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Focus</p>
+          <h2>重点テーマ</h2>
+        </div>
 
-      <div class="card">
-        <h3>Statistics Numbers Basics Python</h3>
-        <p>統計と Python の基礎学習リポジトリ。</p>
-      </div>
+        <div class="focus-grid">
+          <article class="card focus-card">
+            <span class="tag">Analog CMOS</span>
+            <h3>CMOSアナログ回路</h3>
+            <p>
+              MOSFETの動作、差動増幅回路、カレントミラー、負荷、周波数応答、
+              小信号解析、安定性、レイアウトを学びながら整理します。
+            </p>
+          </article>
 
-      <div class="card">
-        <h3>Fundamentals of Deep Learning</h3>
-        <p>深層学習の基礎整理。</p>
-      </div>
+          <article class="card focus-card">
+            <span class="tag">Python</span>
+            <h3>Pythonによる解析と可視化</h3>
+            <p>
+              数式確認、プロット、パラメータ掃引、簡易シミュレーション、
+              自動整理スクリプトなど、学習を加速する道具としてPythonを使います。
+            </p>
+          </article>
 
-      <div class="card">
-        <h3>Modern Control Python</h3>
-        <p>現代制御理論を Python で学ぶための整理。</p>
+          <article class="card focus-card">
+            <span class="tag">Machine Learning</span>
+            <h3>AI・機械学習</h3>
+            <p>
+              線形代数、確率、最適化、ニューラルネットワーク、推論の流れなどを、
+              数学と実装の両面から積み上げます。
+            </p>
+          </article>
+
+          <article class="card focus-card">
+            <span class="tag">Control / Signal</span>
+            <h3>制御・信号処理</h3>
+            <p>
+              伝達関数、状態空間、周波数応答、サンプリング、フィルタ、
+              FFTなどを、回路やAIとつながる形で扱います。
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Links</h2>
-      <p><a href="https://github.com/tututu12321" target="_blank">GitHub Profile</a></p>
+    <section id="posts" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Posts</p>
+          <h2>注目記事</h2>
+          <p class="section-description">
+            ここは後で実記事へのリンクに差し替える場所です。
+          </p>
+        </div>
+
+        <div class="post-grid">
+          <article class="card post-card">
+            <p class="post-meta">Featured Article</p>
+            <h3>CMOS差動対をPythonで理解する</h3>
+            <p>
+              差動入力、テール電流、gm、出力の動き方を、
+              式とグラフで追いながら理解する記事。
+            </p>
+            <a href="#" class="text-link">記事リンクを入れる</a>
+          </article>
+
+          <article class="card post-card">
+            <p class="post-meta">Featured Article</p>
+            <h3>オペアンプの周波数応答と安定性の見方</h3>
+            <p>
+              ゲイン、極、位相余裕、ボード線図の読み方を、
+              初学者でも追える流れで整理する記事。
+            </p>
+            <a href="#" class="text-link">記事リンクを入れる</a>
+          </article>
+
+          <article class="card post-card">
+            <p class="post-meta">Featured Article</p>
+            <h3>機械学習の勾配降下法を回路屋目線で考える</h3>
+            <p>
+              更新式、損失関数、学習率の意味を、
+              数式と直感の両方から整理する記事。
+            </p>
+            <a href="#" class="text-link">記事リンクを入れる</a>
+          </article>
+
+          <article class="card post-card">
+            <p class="post-meta">Featured Article</p>
+            <h3>信号処理とAIをつなぐフーリエ変換の入口</h3>
+            <p>
+              波形、周波数成分、スペクトルの見方を、
+              Pythonの可視化と一緒に学ぶ記事。
+            </p>
+            <a href="#" class="text-link">記事リンクを入れる</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Projects</p>
+          <h2>GitHub上の学習・開発プロジェクト</h2>
+        </div>
+
+        <div class="project-grid">
+          <div class="card project-card">
+            <h3>Statistics-Numbers-Basics-Python</h3>
+            <p>統計、数理、Python基礎の積み上げ。</p>
+          </div>
+
+          <div class="card project-card">
+            <h3>Fundamentals-of-Deep-Learning1</h3>
+            <p>深層学習の基本事項を整理する学習用リポジトリ。</p>
+          </div>
+
+          <div class="card project-card">
+            <h3>Applications-of-Deep-Learning</h3>
+            <p>深層学習の応用例を試しながら理解する記録。</p>
+          </div>
+
+          <div class="card project-card">
+            <h3>Modern-Control-Python</h3>
+            <p>現代制御理論をPythonで整理・計算するプロジェクト。</p>
+          </div>
+
+          <div class="card project-card">
+            <h3>Practice-Machine-Design-Python-Code</h3>
+            <p>工学系の計算や設計の学習メモをまとめる場所。</p>
+          </div>
+
+          <div class="card project-card">
+            <h3>Natural-Language-Processing-Japan-Rock-Python-Code</h3>
+            <p>自然言語処理の題材を使った実験・学習ログ。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Roadmap</p>
+          <h2>学習ロードマップ</h2>
+        </div>
+
+        <div class="roadmap">
+          <div class="roadmap-item">
+            <div class="roadmap-step">01</div>
+            <div class="roadmap-content">
+              <h3>基礎数学とPython</h3>
+              <p>微分積分、線形代数、複素数、確率、数値計算をPythonで確認する。</p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-step">02</div>
+            <div class="roadmap-content">
+              <h3>アナログ回路の基礎</h3>
+              <p>RC、周波数応答、トランジスタの動作、小信号モデルを固める。</p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-step">03</div>
+            <div class="roadmap-content">
+              <h3>CMOSアナログ回路へ進む</h3>
+              <p>差動対、電流ミラー、バイアス、出力段、安定性を記事化しながら学ぶ。</p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-step">04</div>
+            <div class="roadmap-content">
+              <h3>AIと数理の強化</h3>
+              <p>最適化、ニューラルネットワーク、推論、評価指標を実装で確認する。</p>
+            </div>
+          </div>
+
+          <div class="roadmap-item">
+            <div class="roadmap-step">05</div>
+            <div class="roadmap-content">
+              <h3>横断してまとめる</h3>
+              <p>AI、回路、制御、信号処理を別々にせず、一つの学習地図として整理する。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Message</p>
+          <h2>このサイトでやりたいこと</h2>
+        </div>
+
+        <div class="card message-card">
+          <p>
+            このサイトは、学んだことを並べるだけの棚ではなく、
+            「あとで自分が読み返して再び使える技術ノート」にすることを目標にしています。
+            AIもCMOSアナログ回路も、式、直感、実装、検証を行き来しながら深めていきます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Contact</p>
+          <h2>リンク</h2>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="https://github.com/tututu12321" target="_blank" rel="noopener noreferrer">
+            <h3>GitHub</h3>
+            <p>@tututu12321</p>
+          </a>
+
+          <a class="contact-card" href="#" target="_blank" rel="noopener noreferrer">
+            <h3>X / Blog Link</h3>
+            <p>ここに外部リンクを追加</p>
+          </a>
+
+          <a class="contact-card" href="mailto:yourmail@example.com">
+            <h3>Email</h3>
+            <p>yourmail@example.com</p>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 KaniTech Blog</p>
+      <button id="toTopButton" class="to-top" aria-label="ページ上部へ戻る">↑ Top</button>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
